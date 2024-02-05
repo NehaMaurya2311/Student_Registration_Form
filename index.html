@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Student Registration Form</h1>
+    <form action="/submit_form" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <table>
+          <tr>
+            <td><label for="firstName">First Name:</label></td>
+            <td><input type="text" id="firstName" name="firstName" placeholder="Enter your first Name"></td>
+          </tr>
+          <tr>
+            <td><label for="lastName">Last Name:</label></td>
+            <td><input type="text" id="lastName" name="lastName" placeholder="Enter your last Name"></td>
+          </tr>
+
+          <tr>
+            <td><label for="email">Email ID:</label></td>
+            <td><input type="email" id="email" name="email" placeholder="Enter your Email ID"></td>
+          </tr>
+          <tr>
+            <td><label for="mobile">Mobile Number:</label></td>
+            <td><input type="text" id="mobile" name="mobile" placeholder="Enter your Mobile Number"></td>
+          </tr>
+          <tr>
+            <td> <label for="gender">Gender:</label>
+            <td><input type="radio" id="male" name="gender"> Male
+              <input type="radio" id="female" name="gender"> Female
+            </td>
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="dob">Date of Birth:</label>
+            </td>
+            <td><input type="date" id="dob" name="dob"></td>
+          </tr>
+          <tr>
+            <td><label for="address">Address:</label></td>
+            <td><input type="text" id="address" name="address" placeholder="Enter your address"></td>
+          </tr>
+          <tr>
+            <td><label for="city">City:</label>
+            </td>
+            <td> <input type="text" id="city" name="city" placeholder="Enter your city"></td>
+          </tr>
+          <tr>
+            <td><label for="pinCode">Pin Code:</label>
+            </td>
+            <td> <input type="text" id="pinCode" name="pinCode" placeholder="Enter your pin code"> </td>
+          </tr>
+          <tr>
+            <td> <label for="state">State:</label>
+            </td>
+            <td><input type="text" id="state" name="state" placeholder="Enter your state"></td>
+          </tr>
+          <tr>
+            <td><label for="country">Country:</label></td>
+            <td><input type="text" id="country" name="country" placeholder="Enter your country"></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Hobbies</legend>
+        <table>
+          <tr>
+            <td><label for="drawing">Drawing</label>
+              <input type="checkbox" id="drawing" name="hobbies">
+              <label for="singing">Singing</label>
+              <input type="checkbox" id="singing" name="hobbies">
+              <label for="dancing">Dancing</label>
+              <input type="checkbox" id="dancing" name="hobbies">
+              <label for="sketching">Sketching</label>
+              <input type="checkbox" id="sketching" name="hobbies">
+              <label for="others">Others</label>
+              <input type="checkbox" id="others" name="hobbies">
+              <input type="text" id="otherHobbies" name="otherHobbies" placeholder="Enter other hobbies">
+            </td>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Qualification</legend>
+        <input type="checkbox" id="highSchool" name="qualification"> High School (10th) <br>
+        <input type="checkbox" id="higherSchool" name="qualification"> Higher School (12th) <br>
+        <input type="checkbox" id="graduation" name="qualification"> Graduation (Bachelors) <br>
+        <input type="checkbox" id="postGraduation" name="qualification"> Post Graduation <br>
+        <input type="checkbox" id="phd" name="qualification"> Phd <br>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Courses Applied For</legend>
+        <input type="radio" id="bca" name="courses"> BCA (Bachelors of Computer) <br>
+        <input type="radio" id="bcom" name="courses"> B.Com (Bachelors Of Commerce) <br>
+        <input type="radio" id="bsc" name="courses"> B.Sc (Bachelors of Science) <br>
+        <input type="radio" id="ba" name="courses"> BA (Bachelors Of Arts) <br>
+        <input type="radio" id="mca" name="courses"> MCA (Masters of Computer Applications) <br>
+        <input type="radio" id="mcom" name="courses"> M.Com (Master of Commerce) <br>
+        <input type="radio" id="msc" name="courses"> M.Sc (Master of Science) <br>
+        <input type="radio" id="ma" name="courses"> MA (Master of Arts) <br>
+      </fieldset>
+      <label for="documents">Upload Documents</label>
+      <input type="file" id="documents" name="documents"><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </div>
+</body>
+
+</html>
